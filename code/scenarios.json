@@ -1,0 +1,874 @@
+[
+  {
+    "name": "CRB YOLU",
+    "steps": [
+      {
+        "base_name": "KOMPONENT BASE",
+        "type": "goto_base"
+      },
+      {
+        "seconds": 7,
+        "type": "delay"
+      },
+      {
+        "type": "auto_center",
+        "word": "CRB"
+      },
+      {
+        "seconds": 7,
+        "type": "delay"
+      },
+      {
+        "base_name": "CRB MERKEZ",
+        "type": "goto_base"
+      },
+      {
+        "seconds": 3,
+        "type": "delay"
+      },
+      {
+        "type": "move_z",
+        "z": -174
+      },
+      {
+        "type": "delay",
+        "seconds": 17
+      },
+      {
+        "type": "pump_on"
+      },
+      {
+        "seconds": 5,
+        "type": "delay"
+      },
+      {
+        "type": "move_z",
+        "z": -150
+      },
+      {
+        "seconds": 7,
+        "type": "delay"
+      },
+      {
+        "base_name": "DIRENC TEST",
+        "type": "goto_base"
+      },
+      {
+        "seconds": 5,
+        "type": "delay"
+      },
+      {
+        "type": "move_z",
+        "z": -173.3
+      },
+      {
+        "seconds": 5,
+        "type": "delay"
+      },
+      {
+        "type": "resistance_read"
+      },
+      {
+        "fail_steps": [
+          {
+            "seconds": 5,
+            "type": "delay"
+          },
+          {
+            "type": "move_z",
+            "z": -150
+          },
+          {
+            "seconds": 7,
+            "type": "delay"
+          },
+          {
+            "base_name": "R2 PCB",
+            "type": "goto_base"
+          },
+          {
+            "seconds": 9,
+            "type": "delay"
+          },
+          {
+            "type": "move_z",
+            "z": -179.2
+          },
+          {
+            "seconds": 3,
+            "type": "delay"
+          },
+          {
+            "type": "pump_off"
+          },
+          {
+            "seconds": 5,
+            "type": "delay"
+          },
+          {
+            "type": "move_z",
+            "z": 0
+          },
+          {
+            "seconds": 17.5,
+            "type": "delay"
+          },
+          {
+            "base_name": "PCB FOTO",
+            "type": "goto_base"
+          },
+          {
+            "seconds": 8,
+            "type": "delay"
+          },
+          {
+            "type": "verify"
+          },
+          {
+            "seconds": 7,
+            "type": "delay"
+          }
+        ],
+        "pass_steps": [
+          {
+            "seconds": 5,
+            "type": "delay"
+          },
+          {
+            "type": "move_z",
+            "z": -150
+          },
+          {
+            "seconds": 7,
+            "type": "delay"
+          },
+          {
+            "base_name": "R1 PCB",
+            "type": "goto_base"
+          },
+          {
+            "seconds": 9,
+            "type": "delay"
+          },
+          {
+            "type": "move_z",
+            "z": -179.2
+          },
+          {
+            "seconds": 3,
+            "type": "delay"
+          },
+          {
+            "type": "pump_off"
+          },
+          {
+            "seconds": 5,
+            "type": "delay"
+          },
+          {
+            "type": "move_z",
+            "z": 0
+          },
+          {
+            "seconds": 17.5,
+            "type": "delay"
+          },
+          {
+            "base_name": "PCB FOTO",
+            "type": "goto_base"
+          },
+          {
+            "seconds": 8,
+            "type": "delay"
+          },
+          {
+            "type": "verify"
+          },
+          {
+            "seconds": 7,
+            "type": "delay"
+          }
+        ],
+        "target_resistance": 22000,
+        "tolerance_percent": 10,
+        "type": "if_resistance"
+      }
+    ]
+  },
+  {
+    "name": "SHN YOLU",
+    "steps": [
+      {
+        "base_name": "KOMPONENT BASE",
+        "type": "goto_base"
+      },
+      {
+        "seconds": 7,
+        "type": "delay"
+      },
+      {
+        "type": "auto_center",
+        "word": "SHN"
+      },
+      {
+        "seconds": 7,
+        "type": "delay"
+      },
+      {
+        "base_name": "SHN MERKEZ",
+        "type": "goto_base"
+      },
+      {
+        "seconds": 5,
+        "type": "delay"
+      },
+      {
+        "type": "move_z",
+        "z": -174.1
+      },
+      {
+        "seconds": 17,
+        "type": "delay"
+      },
+      {
+        "type": "pump_on"
+      },
+      {
+        "seconds": 5,
+        "type": "delay"
+      },
+      {
+        "type": "move_z",
+        "z": -150
+      },
+      {
+        "seconds": 7,
+        "type": "delay"
+      },
+      {
+        "base_name": "DIRENC TEST",
+        "type": "goto_base"
+      },
+      {
+        "seconds": 5,
+        "type": "delay"
+      },
+      {
+        "type": "move_z",
+        "z": -173.1
+      },
+      {
+        "seconds": 5,
+        "type": "delay"
+      },
+      {
+        "type": "resistance_read"
+      },
+      {
+        "fail_steps": [
+          {
+            "seconds": 5,
+            "type": "delay"
+          },
+          {
+            "type": "move_z",
+            "z": -150
+          },
+          {
+            "seconds": 7,
+            "type": "delay"
+          },
+          {
+            "base_name": "R1 PCB",
+            "type": "goto_base"
+          },
+          {
+            "seconds": 9,
+            "type": "delay"
+          },
+          {
+            "type": "move_z",
+            "z": -179.5
+          },
+          {
+            "seconds": 3,
+            "type": "delay"
+          },
+          {
+            "type": "pump_off"
+          },
+          {
+            "seconds": 5,
+            "type": "delay"
+          },
+          {
+            "type": "move_z",
+            "z": 0
+          },
+          {
+            "seconds": 17.5,
+            "type": "delay"
+          },
+          {
+            "base_name": "PCB FOTO",
+            "type": "goto_base"
+          },
+          {
+            "seconds": 8,
+            "type": "delay"
+          },
+          {
+            "type": "verify"
+          },
+          {
+            "seconds": 7,
+            "type": "delay"
+          }
+        ],
+        "pass_steps": [
+          {
+            "seconds": 5,
+            "type": "delay"
+          },
+          {
+            "type": "move_z",
+            "z": -150
+          },
+          {
+            "seconds": 7,
+            "type": "delay"
+          },
+          {
+            "base_name": "R2 PCB",
+            "type": "goto_base"
+          },
+          {
+            "seconds": 9,
+            "type": "delay"
+          },
+          {
+            "type": "move_z",
+            "z": -179.5
+          },
+          {
+            "seconds": 3,
+            "type": "delay"
+          },
+          {
+            "type": "pump_off"
+          },
+          {
+            "seconds": 5,
+            "type": "delay"
+          },
+          {
+            "type": "move_z",
+            "z": 0
+          },
+          {
+            "seconds": 17.5,
+            "type": "delay"
+          },
+          {
+            "base_name": "PCB FOTO",
+            "type": "goto_base"
+          },
+          {
+            "seconds": 8,
+            "type": "delay"
+          },
+          {
+            "type": "verify"
+          },
+          {
+            "seconds": 7,
+            "type": "delay"
+          }
+        ],
+        "target_resistance": 1000,
+        "tolerance_percent": 10,
+        "type": "if_resistance"
+      }
+    ]
+  },
+  {
+    "name": "AYD YOLU",
+    "steps": [
+      {
+        "base_name": "KOMPONENT BASE",
+        "type": "goto_base"
+      },
+      {
+        "seconds": 7,
+        "type": "delay"
+      },
+      {
+        "type": "auto_center",
+        "word": "AYD"
+      },
+      {
+        "seconds": 7,
+        "type": "delay"
+      },
+      {
+        "base_name": "AYD MERKEZ",
+        "type": "goto_base"
+      },
+      {
+        "seconds": 3,
+        "type": "delay"
+      },
+      {
+        "type": "move_z",
+        "z": -176
+      },
+      {
+        "seconds": 16,
+        "type": "delay"
+      },
+      {
+        "type": "pump_on"
+      },
+      {
+        "seconds": 5,
+        "type": "delay"
+      },
+      {
+        "type": "move_z",
+        "z": -150
+      },
+      {
+        "seconds": 5,
+        "type": "delay"
+      },
+      {
+        "base_name": "DIRENC TEST",
+        "type": "goto_base"
+      },
+      {
+        "seconds": 7.5,
+        "type": "delay"
+      },
+      {
+        "type": "move_z",
+        "z": -170
+      },
+      {
+        "seconds": 5,
+        "type": "delay"
+      },
+      {
+        "type": "diode_read"
+      },
+      {
+        "expected_passing": true,
+        "fail_steps": [
+          {
+            "seconds": 5,
+            "type": "delay"
+          },
+          {
+            "type": "move_z",
+            "z": -150
+          },
+          {
+            "seconds": 3,
+            "type": "delay"
+          },
+          {
+            "angle": 180,
+            "type": "nozzle_goto"
+          }
+        ],
+        "pass_steps": [
+          {
+            "seconds": 5,
+            "type": "delay"
+          },
+          {
+            "type": "move_z",
+            "z": -150
+          }
+        ],
+        "type": "if_diode"
+      },
+      {
+        "type": "goto_base",
+        "base_name": "D1 PCB"
+      },
+      {
+        "seconds": 10,
+        "type": "delay"
+      },
+      {
+        "type": "move_z",
+        "z": -176
+      },
+      {
+        "seconds": 7,
+        "type": "delay"
+      },
+      {
+        "type": "pump_off"
+      },
+      {
+        "seconds": 5,
+        "type": "delay"
+      },
+      {
+        "type": "move_z",
+        "z": 0
+      },
+      {
+        "seconds": 17.5,
+        "type": "delay"
+      },
+      {
+        "base_name": "PCB FOTO",
+        "type": "goto_base"
+      },
+      {
+        "seconds": 5,
+        "type": "delay"
+      },
+      {
+        "type": "verify"
+      },
+      {
+        "seconds": 3,
+        "type": "delay"
+      },
+      {
+        "angle": 0,
+        "type": "nozzle_goto"
+      },
+      {
+        "seconds": 3,
+        "type": "delay"
+      }
+    ]
+  },
+  {
+    "name": "MUS YOLU",
+    "steps": [
+      {
+        "base_name": "KOMPONENT BASE",
+        "type": "goto_base"
+      },
+      {
+        "seconds": 7,
+        "type": "delay"
+      },
+      {
+        "type": "auto_center",
+        "word": "MUS"
+      },
+      {
+        "seconds": 7,
+        "type": "delay"
+      },
+      {
+        "base_name": "MUS MERKEZ",
+        "type": "goto_base"
+      },
+      {
+        "seconds": 3,
+        "type": "delay"
+      },
+      {
+        "type": "move_z",
+        "z": -176
+      },
+      {
+        "type": "delay",
+        "seconds": 18
+      },
+      {
+        "type": "pump_on"
+      },
+      {
+        "seconds": 5,
+        "type": "delay"
+      },
+      {
+        "type": "move_z",
+        "z": -150
+      },
+      {
+        "seconds": 5,
+        "type": "delay"
+      },
+      {
+        "base_name": "DIRENC TEST",
+        "type": "goto_base"
+      },
+      {
+        "seconds": 7.5,
+        "type": "delay"
+      },
+      {
+        "type": "move_z",
+        "z": -170
+      },
+      {
+        "seconds": 5,
+        "type": "delay"
+      },
+      {
+        "type": "diode_read"
+      },
+      {
+        "expected_passing": true,
+        "fail_steps": [
+          {
+            "seconds": 5,
+            "type": "delay"
+          },
+          {
+            "type": "move_z",
+            "z": -150
+          },
+          {
+            "seconds": 3,
+            "type": "delay"
+          },
+          {
+            "angle": 180,
+            "type": "nozzle_goto"
+          }
+        ],
+        "pass_steps": [
+          {
+            "seconds": 5,
+            "type": "delay"
+          },
+          {
+            "type": "move_z",
+            "z": -150
+          }
+        ],
+        "type": "if_diode"
+      },
+      {
+        "base_name": "D2 PCB",
+        "type": "goto_base"
+      },
+      {
+        "seconds": 10,
+        "type": "delay"
+      },
+      {
+        "type": "move_z",
+        "z": -176.2
+      },
+      {
+        "seconds": 7,
+        "type": "delay"
+      },
+      {
+        "type": "pump_off"
+      },
+      {
+        "seconds": 5,
+        "type": "delay"
+      },
+      {
+        "type": "move_z",
+        "z": 0
+      },
+      {
+        "seconds": 17.5,
+        "type": "delay"
+      },
+      {
+        "base_name": "PCB FOTO",
+        "type": "goto_base"
+      },
+      {
+        "seconds": 5,
+        "type": "delay"
+      },
+      {
+        "type": "verify"
+      },
+      {
+        "seconds": 3,
+        "type": "delay"
+      },
+      {
+        "angle": 0,
+        "type": "nozzle_goto"
+      },
+      {
+        "seconds": 3,
+        "type": "delay"
+      }
+    ]
+  },
+  {
+    "name": "DÖN BABA DÖNELİM",
+    "steps": [
+      {
+        "angle": 180,
+        "type": "nozzle_goto"
+      },
+      {
+        "seconds": 5,
+        "type": "delay"
+      },
+      {
+        "angle": 0,
+        "type": "nozzle_goto"
+      },
+      {
+        "seconds": 5,
+        "type": "delay"
+      },
+      {
+        "type": "pump_on"
+      },
+      {
+        "seconds": 2,
+        "type": "delay"
+      },
+      {
+        "angle": 90,
+        "type": "nozzle_goto"
+      },
+      {
+        "type": "pump_off"
+      },
+      {
+        "seconds": 5,
+        "type": "delay"
+      },
+      {
+        "type": "pump_on"
+      },
+      {
+        "type": "nozzle_home"
+      },
+      {
+        "seconds": 5,
+        "type": "delay"
+      },
+      {
+        "type": "pump_off"
+      }
+    ]
+  },
+  {
+    "name": "Test Direnç",
+    "steps": [
+      {
+        "base_name": "KOMPONENT BASE",
+        "type": "goto_base"
+      },
+      {
+        "seconds": 7,
+        "type": "delay"
+      },
+      {
+        "type": "auto_center",
+        "word": "CRB"
+      },
+      {
+        "seconds": 7,
+        "type": "delay"
+      },
+      {
+        "base_name": "CRB MERKEZ",
+        "type": "goto_base"
+      },
+      {
+        "seconds": 3,
+        "type": "delay"
+      },
+      {
+        "type": "move_z",
+        "z": -174
+      },
+      {
+        "type": "delay",
+        "seconds": 17
+      },
+      {
+        "type": "pump_on"
+      },
+      {
+        "seconds": 5,
+        "type": "delay"
+      },
+      {
+        "type": "move_z",
+        "z": -150
+      },
+      {
+        "seconds": 7,
+        "type": "delay"
+      },
+      {
+        "base_name": "DIRENC TEST",
+        "type": "goto_base"
+      },
+      {
+        "seconds": 5,
+        "type": "delay"
+      },
+      {
+        "type": "move_z",
+        "z": -173.3
+      },
+      {
+        "seconds": 5,
+        "type": "delay"
+      },
+      {
+        "type": "measure_resistance"
+      },
+      {
+        "seconds": 10,
+        "type": "delay"
+      },
+      {
+        "type": "move_z",
+        "z": -150
+      },
+      {
+        "seconds": 5,
+        "type": "delay"
+      },
+      {
+        "base_name": "BONUS MERKEZ",
+        "type": "goto_base"
+      },
+      {
+        "seconds": 5,
+        "type": "delay"
+      },
+      {
+        "type": "move_z",
+        "z": -173
+      },
+      {
+        "seconds": 5,
+        "type": "delay"
+      },
+      {
+        "type": "pump_off"
+      },
+      {
+        "seconds": 5,
+        "type": "delay"
+      },
+      {
+        "type": "move_z",
+        "z": -150
+      },
+      {
+        "seconds": 5,
+        "type": "delay"
+      }
+    ]
+  }
+]
