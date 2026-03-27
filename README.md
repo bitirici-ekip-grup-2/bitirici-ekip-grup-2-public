@@ -22,8 +22,8 @@
 
 <p align="center">
   <b>▶️ <a href="https://www.youtube.com/watch?v=4ooFj-DulBk">Watch the Project Demonstration Video on YouTube</a></b>
+  https://www.youtube.com/watch?v=4ooFj-DulBk
 </p>
-https://www.youtube.com/watch?v=4ooFj-DulBk
 
 <table>
   <tr>
